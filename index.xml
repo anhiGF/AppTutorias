@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<website>
+    <page>
+        <meta http-equiv="refresh" content="0; url=landing-page.html" />
+        <title>Redirigiendo a la Landing Page</title>
+    </page>
+</website>
