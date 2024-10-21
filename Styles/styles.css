@@ -1,6 +1,6 @@
 /* Variables de color */
 :root {
-    --color-rojo-suave: #9b1f53;
+    --color-rojo-suave: #E57373;
     --color-blanco: #FFFFFF;
     --color-gris-claro: #F5F5F5;
     --color-gris-oscuro: #616161;
@@ -101,4 +101,57 @@ input[type="text"], input[type="email"], input[type="password"] {
     display: block;
     text-align: center;
     margin-top: 10px;
+}
+
+/* Estilos para el menú lateral */
+.sidebar {
+    height: 100%;
+    width: 0; /* Inicialmente está colapsado */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-gris-oscuro);
+    overflow-x: hidden;
+    transition: 0.5s; /* Transición suave al abrir/cerrar */
+    padding-top: 60px; /* Espaciado para el contenido */
+}
+
+.sidebar a {
+    padding: 10px 15px; /* Espaciado de los enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-blanco);
+    display: block; /* Los enlaces ocupan toda la línea */
+    transition: 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.sidebar a:hover {
+    background-color: var(--color-rojo-suave); /* Color de fondo al pasar el mouse */
+    color: var(--color-blanco);
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s; /* Transición suave al mover el contenido */
+    padding: 16px; /* Espaciado para el contenido principal */
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: var(--color-rojo-suave); /* Color de fondo al pasar el mouse */
 }
