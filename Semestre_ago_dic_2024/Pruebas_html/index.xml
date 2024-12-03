@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aplicacion tutorias</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<!---codigo javascript-->
+<script ></script>
+<script src="codigo.js"></script>
+</head>
+<body>
+	<header>
+		logo
+		<h1>Area de tutorias</h1>
+		<h3>Bienbenido</h3>
+	</header>
+<nav>
+	Menu
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="pages/docentes.html"> Docente</a></li>
+		<li><a href="pages/Alumnos.html">Alumnos</li>
+		<li><a href="pages/descargas.html">descargas</li>
+		<li></li>
+		<li><a href="pages/iniciosecion.html">inicio secion</li>
+		<li><a href="pages/registro.html">registro</li>
+	</ul>
+</nav>
+<section class="container"> 
+	<article class="article">
+		<h3>Articulo 1</h3>
+		<p>texto del articulo</p>
+	</article>
+	<article class="article">
+		<h3>Articulo 2</h3>
+		<p>texto del articulo</p>
+	</article>
+	<article class="article">
+		<h3>Articulo 3</h3>
+		<p>texto del articulo</p>
+	</article>
+</section>
+<aside>
+	<h3>barra lateral</h3>
+	<input type="text" />
+	<input type="submit" value="Buscar" />
+</aside>
+<footer>
+	TECNM Campus jerez 
+</footer>
+
+</body>
+</html>

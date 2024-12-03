@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de Registro</title>
+    <script src="validacion_registro.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], input[type="submit"], input[type="button"] {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>Formulario de Registro</h3>
+    <form method="post" action="codigo.php" onsubmit=" return validacionformulario();">
+        <label for="caja_num_control">Número de Control:</label>
+        <input type="text" name="caja_num_control" id="caja_num_control" size="8" maxlength="8" pattern="\d+" placeholder="Solo números" title="Solo números" onkeypress="validacionNumero2(event)" required>
+		
+        <label for="caja_nombre">Nombre:</label>
+        <input type="text" name="caja_nombre" id="caja_nombre" maxlength="50" pattern="[A-Za-z\s]+" placeholder="Solo letras" title="Solo letras" onkeyup="return validacionLetras(this)" required>
+
+        <label for="caja_edad">Edad:</label>
+        <input type="number" name="caja_edad" id="caja_edad" min="1" max="120" placeholder="Edad" required>
+
+		<label for="caja_semestre">semestre:</label>
+        <input type="number" name="caja_semestre" id="caja_semestre" min="1" max="12" placeholder="semestre" required>
+
+        <label>Carrera:</label>
+        <select name="carrera" required>
+            <option value="" disabled selected>Selecciona una carrera</option>
+            <option value="ing_sistemas_computacionales">Ing. Sistemas Computacionales</option>
+            <option value="iia">IIA</option>
+            <option value="im">IM</option>
+        </select>
+
+        <label>Especialidad de Interés (mínimo una):</label>
+        <input type="checkbox" name="especialidad" value="devops"> DevOps<br>
+        <input type="checkbox" name="especialidad" value="ciencia_de_datos"> Ciencia de Datos<br>
+        <input type="checkbox" name="especialidad" value="maching_learning"> Machine Learning<br>
+
+        <hr>
+		<input type="checkbox" name="Comprobante" value="Comprobante"> Comprobante de Pago:<br>
+		<hr>
+        <p>¿Cuántos comprobantes deseas agregar para actividades extracurriculares?</p>
+        <input type="number" name="comprobantes" min="0" placeholder="Número de comprobantes" required>
+        
+        <br>
+        <input type="submit" value="Inscribir" >
+        <input type="button" value="Limpiar" onclick="this.form.reset();">
+    </form>
+</body>
+</html>

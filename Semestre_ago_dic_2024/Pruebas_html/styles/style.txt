@@ -1,0 +1,26 @@
+body{
+	font-size: 20p;
+	width: 80%;
+}
+
+.constrainer{
+	width: 20%;
+	border: 3px solid black;
+	margin: 8px;
+}
+
+header{
+	background-color: beige;
+	margin: 0px;
+}
+
+nav{
+	background-color: purple;
+	color: white;
+	margin: 0px;
+}
+
+#saludo{
+	border: 1px dashed red;
+	padding: ;
+}

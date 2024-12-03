@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registro</title>
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<hr/>
+<h1>Formulario de registro para tutorados</h1>
+
+<form method="POST" action="">
+	<!------Elementos html tipo block----->
+
+	<h3 style="background-color: aqua;">Datos personales</h3>
+	<!------Elementos html inline----->
+	<label style="background-color: aqua;">Numero de control:</label>
+	<input type="text"  id="caja_num_control" class="" name="caja_num_control" placeholder="Solo numeros"/>
+	<br>
+	<label>Nombre:</label>
+	<input type="text" id="caja_Nombre" class="" name="caja_Nombre" placeholder="Solo letras"/>
+	<br>
+	<label>Primer Ap:</label>
+	<input type="text" id="caja_Primer_ap" class="" name="caja_Primer_ap" placeholder="Solo letras"/>
+	<br>
+	<label>Segundo Ap:</label>
+	<input type="text" id="caja_Segundo_ap" class="" name="caja_Segundo_ap" placeholder="Solo letras"/>
+	<br>
+
+	<label>Edad:</label>
+	<select>
+		<option>seleciona una opc.</option>
+		<optgroup label="infante">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</optgroup>
+		<optgroup label="adulto">
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+		</optgroup>
+	</select>
+	<br>
+	<label>semestre:</label>
+	<input type="number"  min="1" max="12" value="1" />
+	<br>
+	<label>Seleciona tu carrera:</label>
+	<input type="radio"  checked id="radio_isc" name="carreras" value="isc" /><label>ISC</label>
+	<input type="radio" checked id="radio_im" name="carreras"  value="im" /><label>IM</label>
+	<input type="radio" checked id="radio_ia" name="carreras"  value="ia" /><label>IA</label>
+	<input type="radio" checked id="radio_la" name="carreras"  value="la" /><label>LA</label>
+	<input type="radio" checked id="radio_lc" name="carreras" value="lc" />
+	<label for="radio_lc">Licenciatura en Contaduria</label>
+	<br>
+	<label>Seleciona actividades extraescolares</label>
+	<input type="checkbox" id="checkbox_deportes" name="" value="Deportes" /><label for="checkbox_deportes">Deportes</label>
+	<input type="checkbox" id="checkbox_musica" name="" value="musica" /><label for="checkbox_musica">musica</label>
+	<input type="checkbox" id="checkbox_danza" name="" value="Danza" /><label for="checkbox_danza">Danza</label>
+	<input type="checkbox" id="checkbox_academico" name="" value="academico" /><label for="checkbox_academico">academico</label>
+	<br>
+	<label>Comenterios adicionales:</label>
+	<textarea id="txt_comentarios" name="txt_comentarios" cols="20" rows="20">
+		agrega comentarios a tu registro...
+	</textarea>
+	<br>
+	<input type="button" name="cancelar" value="cancelar">
+	<input type="button" name="restableser" value="restableser">
+	<input type="submit" name="enviar" value="enviar >>>">
+</form>
+
+
+<a href="../index.html"> regresa a inicio</a>
+<input type="color" name="">
+<input type="date" name="">
+</body>
+</html>
